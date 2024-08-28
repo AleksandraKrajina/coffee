@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Coffy Website</title>
+        <link rel="stylesheet" href="style.css" type="text/css">
+    </head>
+    <body>
+         <section>
+            <div class="circle"></div>
+            <header>
+                <a href="main.html"><img src="./pic/logo.png" class="logo"></a>
+                <button class="mobile">Menu</button>
+
+            <ul class="nav-links">
+                <li><a href="main.html">Home</a></li>
+                <li><a href="#recipes">Recipes</a></li>
+                <li><a href="#form">Subscribe</a></li>
+            </ul>
+            </header>
+            <div class="content">
+                <div class="textBox">
+                     <h2>It's not <span>Just</span><br> a Coffy</h2>
+                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos, magni beatae possimus nulla assumenda corporis 
+                        suscipit eos impedit optio quaerat ex ad rerum laborum quisquam porro quidem quas, voluptatum nihil.</p>
+                        <a class="myBtn">Learn More</a>
+                </div>
+                        <div class="imgBox">
+                            <img src="./pic/img1.png" class="starbuks">
+                        </div>
+            </div>
+            <ul class="thumb">
+                <li><img src="./pic/img1.png" onclick="imgSlider('./pic/img1.png'); changeCircleColor('#017143')"></li>
+                <li><img src="./pic/img2.png" onclick="imgSlider('./pic/img2.png'); changeCircleColor('#eb7495')"></li>
+                <li><img src="./pic/img3.png" onclick="imgSlider('./pic/img3.png'); changeCircleColor('#d752b1')"></li>
+            </ul>
+            <ul class="sci">
+                <li><a href="#"><img src="./pic/facebook.png"></a></li>
+                <li><a href="#"><img src="./pic/twitter.png"></a></li>
+                <li><a href="#"><img src="./pic/instagram.png"></a></li>
+            </ul>
+         </section>
+
+         <section id="recipes">
+            <div class="slider-recipes">
+                <h3>Our best recipes</h3>
+                <div class="slides">
+                    <div class="recipe fade">
+                        <div class="left">
+                            <img src="./pic/img01.jpg" class="images">
+                        </div>
+                        <div class="right">
+                            <h2>Strawberry</h2>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Pariatur harum vel cumque error odit a at earum sit temporibus 
+                                ad tenetur ullam, tempora eius sunt perspiciatis. Laborum consequatur 
+                                veniam fugit!
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia dicta quia,
+                                 culpa nam expedita maxime sed maiores dolorem fugiat est minus exercitationem
+                                 
+                            </p>
+                            <button class="myBtn"><a id="recipes">Read more</a></button>
+                        </div>
+                    </div>
+                    <div class="recipe fade"> 
+                        <div class="left">
+                            <img src="./pic/img02.jpg" class="images">
+                        </div>
+                        <div class="right">
+                            <h2>Sweet cherry</h2>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Pariatur harum vel cumque error odit a at earum sit temporibus 
+                                ad tenetur ullam, tempora eius sunt perspiciatis. Laborum consequatur 
+                                veniam fugit!
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia dicta quia,
+                                 culpa nam expedita maxime sed maiores dolorem fugiat est minus exercitationem
+                                  totam similique
+                            </p>
+                            <button class="myBtn"><a id="recipes">Read more</a></button>
+                        </div>
+
+                    </div>
+                    <div class="recipe fade">
+                        <div class="left">
+                            <img src="./pic/img03.png" class="images">
+                        </div>
+                        <div class="right">
+                            <h2>Chocolate strawberries</h2>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Pariatur harum vel cumque error odit a at earum sit temporibus 
+                                ad tenetur ullam, tempora eius sunt perspiciatis. Laborum consequatur 
+                                veniam fugit!
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia dicta quia,
+                                 culpa nam expedita maxime sed maiores dolorem fugiat est minus exercitationem
+                                  totam similique sequi 
+                            </p>
+                            <button class="myBtn"><a id="recipes">Read more</a></button>
+                        </div>
+                    </div>
+                    <!--Next and previous buttons-->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                
+            </div>
+         </section>
+
+         <section id="form">
+
+            <form>
+                <h1>Sing up <br>and get notifications <br>about our new recipes 
+                    and weekly promotions</h1><br>
+                    <div>
+                        <label for="name_surname" class="label">Name and Surname</label><br>
+                    <input id="name_surname" type="text" name="name_surname" placeholder="Jack Smith">
+                    <br>
+                    </div>
+                    <div>
+                        <label for="user_name" class="label">User name</label><br>
+                    <input id="user_name" type="text" name="user_name" placeholder="Jack123">
+                    <br>
+                    </div>
+                    <div>
+                        <label for="email" class="label">E-mail</label><br>
+                    <input id="email" type="text" name="email" placeholder="jacksmith@gmail.com">
+                    <br>
+                    </div>
+                    <div>
+                        <label for="password" class="label">Password</label><br>
+                    <input id="password" type="password" name="password" placeholder="**********">
+                    <br>
+                    </div>
+                    <div>
+                        <label for="repeat_password" class="label">Repeat the password</label><br>
+                    <input id="repeat_password" type="password" name="repeat_password" placeholder="**********">
+                    <br><br>
+                    </div>
+                   <div>
+                    <button type="button">Sing up</button>
+                   </div>
+            </form>
+         </section>
+         <footer>
+            <div class="grid-container">
+                <div class="item1">
+                    <p>Our location <br> Kihey, Hawaii 96753, SAD</p>
+                    <br><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14926.586548783216!2d-156.457817073217!3d20.72456902862143!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7954daa0698e63f3%3A0xfe7c40ef718bc731!2sCharley%20Young%20Beach!5e0!3m2!1ssr!2srs!4v1664882373441!5m2!1ssr!2srs" 
+                    width="auto" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <hr>  </div> 
+                <div class="item2">
+
+                    <h2> It's not <span>Just</span> a Coffy</h2> <br>
+                   
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor minus quas laboriosam reiciendis<br> officia dolore perferendis incidunt, sapiente architecto
+                     vitae magnam tenetur corrupti voluptatem ducimus quibusdam aperiam cumque delectus earum!<br><br>
+                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis eius beatae officia est id debitis<br> facilis facere sunt nisi laudantium veritatis
+                      in nulla quia illum obcaecati, cupiditate doloribus saepe maiores.<hr>
+                </div> 
+                <div class="footer-menu">
+                      <li><a href="main.html">Home</a></li>
+                      <li><a href="recipes.html">Recipes</a></li>
+                      <li><a href="#form">Subscribe</a></li>
+
+                      <br>
+                       <ul>
+                        <li><a href="#"><img src="./pic/facebook.png"></a></li> 
+                        <li><a href="#"><img src="./pic/twitter.png"></a></li> 
+                        <li><a href="#"><img src="./pic/instagram.png"></a></li> 
+                       </ul> <hr>
+                </div>
+            </div>
+         </footer>
+         <script src="validation.js"></script>
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>
+
+
+
+
+
+
+
+
